@@ -1,11 +1,10 @@
-def summa():
-    a=input('Введите числа: ').split()
-    s=0
-    print(a)
-    for i in range(0, len(a)):
+def summa(): 
+    a=input('Введите числа для подсчёта их суммы: ').split() #ввод чисел через пробел и создание списка с ними
+    s=0 #для суммы
+    for i in range(0, len(a)): #цикл для преобразования типа и суммы
         a[i]=float(a[i])
         s+=a[i]
-    print('сумма чисел: ',s)
+    print('сумма чисел: ',s) #вывод суммы
 
 def main():
     summa()
